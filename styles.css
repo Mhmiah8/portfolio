@@ -467,4 +467,26 @@ section {
     .contact-form {
         order: 1;
     }
+}
+
+/* Add this to your existing styles */
+.profile-image {
+    width: 200px;  /* Adjust size as needed */
+    height: 200px;
+    margin: 0 auto 2rem;
+    border-radius: 50%;  /* Makes it circular */
+    overflow: hidden;
+    border: 3px solid #9c27b0;  /* Matches your theme */
+    animation: fadeIn 1s ease;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Maintains aspect ratio */
+    transition: transform 0.3s ease;
+}
+
+.profile-image:hover img {
+    transform: scale(1.05);  /* Slight zoom on hover */
 } 
